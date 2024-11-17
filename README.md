@@ -1,3 +1,20 @@
+# Time-Series Prediction Using LSTM in PyTorch
+
+This repository contains a project for predicting time-series data using Long Short-Term Memory (LSTM) networks implemented in PyTorch. The dataset is preprocessed to ensure a robust time-series model that predicts future values based on historical data.
+
+## Features
+
+- **Data Handling**: Use of pydrive to fetch and preprocess data stored on Google Drive.
+- **Data Preprocessing**:
+  - Interpolation for missing values.
+  - Standardization of features using StandardScaler.
+- **Deep Learning**:
+  - Custom LSTM model for time-series prediction.
+  - Implementation of backpropagation and training loop.
+- **Visualization**:
+  - Matplotlib for plotting training loss and predictions.
+- **Performance Evaluation**:
+  - Root Mean Square Error (RMSE) and Mean Square Error (MSE).
 pip install -U PyDrive numpy pandas matplotlib seaborn torch statsmodels
 from pydrive.auth import GoogleAuth
 from pydrive.drive import GoogleDrive
